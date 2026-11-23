@@ -1,23 +1,9 @@
-// https://www.acmicpc.net/problem/1000
-// 백준 단계별로 풀어보기 - 입출력과 사칙연산
-// 2단계. 1000 A+B
-
-// 시간 제한 : 2초
-// 메모리 제한 : 128 MB
-// 문제 : 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
-// 입력 : 첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
-// 출력 : 첫째 줄에 A+B를 출력한다.
-
 using System;
-namespace Baekjoon
-{
-    class Baekjoon1000
-    {
-        static void Main(string[] args)
-        {
-            int[] num = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-            Console.WriteLine(num[0] + num[1]);
+namespace Baekjoon{
+    class Baekjoon1000{
+        static void Main(string[]args){
+            string[] Input = Console.ReadLine().Split();
+            Console.WriteLine(int.Parse(Input[0])+int.Parse(Input[1]));
         }
     }
 }
-// 풀이: https://elifsblog.tistory.com/2
